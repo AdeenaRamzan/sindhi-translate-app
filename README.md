@@ -1,0 +1,1 @@
+# sindhi-translate-app
