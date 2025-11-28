@@ -104,4 +104,4 @@ http://localhost:3000
 ---
 
 ## Live Demo
-https://sindhi-translate-app-timj-git-main-adeenaramzans-projects.vercel.app/
+https://sindhi-translate-app.vercel.app/
