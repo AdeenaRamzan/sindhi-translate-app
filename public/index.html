@@ -1,0 +1,134 @@
+<!-- FILE: public/index.html --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sindhi Translator</title>
+
+  <!-- Google font only for Noto Nastaliq Urdu (Arabic script support) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  <!-- Comic Relief main UI font (CDN) -->
+  <!-- <link href="https://fonts.cdnfonts.com/css/comic-relief" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6212/6212766.png" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="u-skip-link">Skip to main content</a>
+
+  <div class="container c-app-container">
+    <header class="c-header">
+      <div class="c-header__text">
+        <h1 class="c-header__title">Sindhi Translator</h1>
+        <p class="c-header__subtitle">
+          A focused workspace to translate Sindhi into Urdu and English, with quick export to PDF, Excel, and text.
+        </p>
+      </div>
+    </header>
+
+    <main id="main-content" class="c-main" aria-label="Sindhi translation workspace">
+      <section class="input-section c-card" aria-labelledby="input-section-title">
+        <div class="c-section-header">
+          <h2 id="input-section-title" class="c-section-title">Input &amp; Actions</h2>
+          <p class="c-section-description">
+            Start by typing Sindhi text or uploading a .txt / .docx file, then run the translation and export the results if needed.
+          </p>
+        </div>
+
+        <div class="c-field-group">
+          <label for="sindhi-input" class="c-label">Enter Sindhi text</label>
+          <textarea
+            id="sindhi-input"
+            rows="4"
+            class="c-input c-input--textarea"
+            placeholder="Type or paste Sindhi text here..."
+          ></textarea>
+        </div>
+
+        <div class="file-upload c-field-group">
+          <label for="file-input" class="c-label">Or upload .txt / .docx file</label>
+          <div class="c-file-input-wrapper">
+            <input type="file" id="file-input" accept=".txt,.docx" class="c-file-input" />
+            <span class="c-file-input__hint">Maximum size depends on your server configuration.</span>
+          </div>
+        </div>
+
+        <div class="c-actions">
+          <button id="translate-btn" class="c-btn c-btn--primary">
+            Translate &amp; Show
+          </button>
+          <div class="export-buttons c-actions__secondary" aria-label="Export translation results">
+            <button class="c-btn c-btn--secondary" data-export="pdf">Export PDF</button>
+            <button class="c-btn c-btn--secondary" data-export="xlsx">Export Excel</button>
+            <button class="c-btn c-btn--secondary" data-export="txt">Export TXT</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="columns c-grid c-card" aria-label="Translation results">
+        <div class="column c-grid__column">
+          <h2 class="c-column-title">Sindhi (Original)</h2>
+          <!-- dir="rtl" for right-to-left -->
+          <div
+            id="sindhi-output"
+            class="text-box c-output"
+            dir="rtl"
+            aria-live="polite"
+            aria-label="Sindhi original text"
+          ></div>
+        </div>
+
+        <div class="column c-grid__column">
+          <h2 class="c-column-title">Urdu (Translation)</h2>
+          <div
+            id="urdu-output"
+            class="text-box c-output"
+            dir="rtl"
+            aria-live="polite"
+            aria-label="Urdu translation"
+          ></div>
+        </div>
+
+        <div class="column c-grid__column">
+          <h2 class="c-column-title">English (Translation)</h2>
+          <div
+            id="english-output"
+            class="text-box c-output"
+            dir="ltr"
+            aria-live="polite"
+            aria-label="English translation"
+          ></div>
+        </div>
+      </section>
+
+      <section class="history-section c-card" aria-labelledby="history-section-title">
+        <div class="c-section-header c-section-header--compact">
+          <h2 id="history-section-title" class="c-section-title">Translation History</h2>
+          <p class="c-section-description">
+            Stored locally in your browser. Clearing history only affects this device.
+          </p>
+        </div>
+        <ul id="history-list" class="c-history-list" aria-label="Previous translations"></ul>
+        <div class="c-history-actions">
+          <button id="clear-history-btn" class="c-btn c-btn--danger">
+            Clear History
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="c-footer" aria-label="App footer">
+      <p class="c-footer__text">
+        Sindhi Translation Studio · Designed for smooth Sindhi, Urdu, and English workflows. Translation quality depends on the underlying service.
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

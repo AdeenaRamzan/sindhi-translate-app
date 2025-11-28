@@ -1,0 +1,14 @@
+Sindhi:
+تنهنجو نالو ڇا آهي؟
+منهنجو نالو شازيه آهي
+تنهنجي ڀاءُ جو نالو ڇا آهي؟
+
+Urdu:
+آپ کا نام کیا ہے ؟xxxx
+میرا نام شازیہ ہے
+آپ کے بھائی کا نام کیا ہے؟
+
+English:
+What's your name?xxxx
+My name is Shazia
+What's your brother's name?
