@@ -45,20 +45,25 @@ A web application where users enter Sindhi text (or upload a `.txt` / `.docx` fi
 
 ---
 
-## Getting Started
+## Setup
+### 1. Clone and install
 git clone https://github.com/AdeenaRamzan/sindhi-translate-app.git
 cd sindhi-translate-app
-
-
-### 2. Install dependencies
 npm install
 
 ---
 
 
-### 3. Configure environment variables
+### 2. Configure environment variables
 Create a file named `.env` in the project root:
 
+
+### 3. Fonts for PDFs (optional but recommended)
+
+- Create a `fonts/` folder.  
+- Download `Amiri-Regular.ttf` (or any Urdu/Sindhi‑supporting font) and place it inside `fonts/`.
+
+---
 
 ## Run
 node server.js
