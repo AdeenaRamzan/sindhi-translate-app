@@ -46,8 +46,8 @@ A web application where users enter Sindhi text (or upload a `.txt` / `.docx` fi
 ---
 
 ## Getting Started
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/AdeenaRamzan/sindhi-translate-app.git
+cd sindhi-translate-app
 
 
 ### 2. Install dependencies
@@ -96,5 +96,4 @@ http://localhost:3000
 - Offline/PWA support  
 - User authentication and saved profiles
 
-### 1. Clone the repository
 
