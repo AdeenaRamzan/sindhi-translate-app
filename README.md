@@ -101,4 +101,7 @@ http://localhost:3000
 - Offline/PWA support  
 - User authentication and saved profiles
 
+---
 
+## Live Demo
+https://sindhi-translate-app-timj-git-main-adeenaramzans-projects.vercel.app/
